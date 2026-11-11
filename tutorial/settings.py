@@ -25,7 +25,8 @@ SECRET_KEY = 'django-insecure-!5u-0ztwu)hnx)1w8xl&q-%0y6)aakma04ps^#n5w%-4m%nb)&
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = []
+ALLOWED_HOSTS = ['milkkusa.pythonanywhere.com']
+STATIC_ROOT = BASE_DIR / 'static'
 
 
 # Application definition
@@ -132,6 +133,3 @@ REST_FRAMEWORK = {
     'DEFAULT_PAGINATION_CLASS': 'rest_framework.pagination.PageNumberPagination',
     'PAGE_SIZE': 10,
 }
-
-ALLOWED_HOSTS = ['milkkusa.pythonanywhere.com']
-STATIC_ROOT = BASE_DIR / 'static'
